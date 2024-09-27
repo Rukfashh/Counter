@@ -13,6 +13,10 @@ btns.forEach(function (button) {
             count--;
         } else if(styles.contains('increase')){
             count++;
+        } else if (styles.contains("decrease-by-ten")){
+            count -=10;
+        } else if (styles.contains("increase-by-ten")){
+            count +=10;
         } else {
             count = 0;
         }
